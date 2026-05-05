@@ -1,0 +1,55 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{assets/abstractkeywords}[2015/05/20 Abstract and Keyword Page]
+
+%% Require cnabstract, cnkeyword, enabstract, enkeywords.
+
+\RequirePackage{abstract}
+\RequirePackage{fontspec}
+
+\newcommand*{\cnabstractkeywords}[2]{
+  \def\@cnabstract{#1}
+  \def\@cnkeywords{#2}
+}
+
+\newcommand*{\enabstractkeywords}[2]{
+  \def\@enabstract{#1}
+  \def\@enkeywords{#2}
+}
+
+\newcommand{\fixbaselineskip}{%
+	\setlength{\baselineskip}{24pt}%
+	\setlength{\lineskip}{0pt}%
+	\setlength{\lineskiplimit}{0pt}%
+}
+
+\newcommand*{\makeabstract}{
+  \newpage
+  \pagenumbering{Roman}
+  \begin{center}
+      \zihao{3}{\heiti{\@title}}
+  \end{center}
+  \ifdefined\@cnabstract{
+    \renewcommand\abstractname{\zihao{3}{\heiti{摘\ \ \ 要}}}
+    \begin{abstract}
+      \zihao{-4}\fixbaselineskip\songti{\@cnabstract}\par
+      
+      \zihao{-4}\fixbaselineskip \heiti{\textbf{关键词：\@cnkeywords}}
+    \end{abstract}
+    \vspace{5mm}
+    \newpage
+  }
+  \fi
+  \ifdefined\@enabstract{
+    \begin{center}
+        \zihao{3}{\heiti{\textbf{\@entitle}}}
+    \end{center}
+    \renewcommand\abstractname{\zihao{3}{\heiti{Abstract}}}
+    \begin{abstract}
+      \zihao{4}\fixbaselineskip\setmainfont{Times New Roman}\@enabstract\par
+      
+      \zihao{4}\fixbaselineskip \heiti{\textbf{Keywords:\@enkeywords}}
+    \end{abstract}
+  }
+  \fi
+  \newpage
+}

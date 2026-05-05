@@ -1,0 +1,78 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{assets/cover}[2015/05/20 Cover Page]
+
+%% Require title, author, studentid, advisor, college, department. 
+% 导言区
+\usepackage{ulem}
+\usepackage{calc}
+\normalem
+\newlength{\labelwidthtmp}
+
+\newcommand{\boxfilluline}[3]{%
+	\settowidth{\labelwidthtmp}{#2}%
+	\makebox[#1][l]{%
+		#2%
+		\uline{\makebox[\dimexpr#1-\labelwidthtmp\relax][c]{\strut #3}}%
+	}%
+}
+
+\newcommand*{\makecover}{
+  \begin{titlepage}
+    \begin{minipage}{80mm}
+      \songti{\zihao{-5}{
+      	  \boxfilluline{0.5\linewidth}{分类号}{}\boxfilluline{0.5\linewidth}{密级}{} \\
+          \boxfilluline{\linewidth}{UDC}{}
+          
+      }}
+    \end{minipage}
+    \hspace{20mm}
+    \begin{minipage}{40mm}
+      \includegraphics[width=\linewidth]{assets/logo}
+    \end{minipage}
+    \vspace{30mm}\\
+    \centerline{\songti\zihao{-0}{\textbf{本\ 科\ 毕\ 业\ 论\ 文（设\ 计）}}}
+
+
+    \vspace{15mm}
+    \centerline{\heiti\zihao{1}{\@title}}
+
+
+    \vspace{45mm}
+
+    \begin{center}
+    	\heiti\zihao{4}
+    	
+		\boxfilluline{0.33\linewidth}{学生姓名}{\songti\@author}\boxfilluline{0.27\linewidth}{学号}{\songti\@studentid}\par
+    
+    	
+    	\vspace{4mm}
+    	
+    	\boxfilluline{0.6\linewidth}{指导教师}{\songti\@advisor}\par
+    	
+    	
+    	\vspace{4mm}
+    	
+    	\boxfilluline{0.6\linewidth}{学部、学院（中心）}{\songti\@college}\par
+    	
+    	\vspace{4mm}
+    	
+    	\boxfilluline{0.6\linewidth}{专业年级}{\songti\@department}\par
+    	
+    	\vspace{4mm}
+    	
+    	\makebox[0.6\linewidth][l]{%
+    		论文答辩日期
+    		\makebox[0.6\linewidth-\widthof{论文答辩日期}]{
+    			\makebox[(0.6\linewidth-\widthof{论文答辩日期}-\widthof{年月日})/3+\widthof{年月}][c]{\@nian}年
+    			\makebox[(0.6\linewidth-\widthof{论文答辩日期}-\widthof{年月日})/3-\widthof{月}][c]{\@yue}月
+    			\makebox[(0.6\linewidth-\widthof{论文答辩日期}-\widthof{年月日})/3-\widthof{月}][c]{\@ri}日
+    			}
+    		
+    	}\par
+    	
+    	\vspace{6mm}
+    	
+    	\kaishu\zihao{-2}{\textbf{中\ 国\ 海\ 洋\ 大\ 学}}
+    \end{center}
+  \end{titlepage}
+}
