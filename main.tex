@@ -1,0 +1,111 @@
+\documentclass[UTF8,zihao=-4]{oucart}
+\usepackage{indentfirst}
+\usepackage{amsmath,amsfonts}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{multirow} 
+\usepackage{newfloat}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{pifont}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[table]{xcolor}
+\usepackage{arydshln}
+\usepackage{setspace}
+\usepackage{etoolbox}
+\frenchspacing
+\setmainfont{Times New Roman}
+\usepackage[
+backend=biber,
+style=gb7714-2015,
+gbnamefmt=lowercase 
+]{biblatex}
+% 参考文献格式
+\AtBeginBibliography{
+	\zihao{-4}
+	\songti
+	\fixbaselineskip
+}
+\renewbibmacro{in:}{\setunit{\addperiod\space}}
+\renewbibmacro{publisher+location+date}{%
+	\setunit{\addcomma\space}%
+	\printfield{year}%
+}
+\addbibresource{ref.bib}
+\title{关于赛博水豚的养殖研究}
+\entitle{Research on the Breeding of Cyber Capybaras}
+\author{噜噜}
+\studentid{001}
+\advisor{奶龙}
+\college{农业学院}
+\department{动物养殖工程}
+\nian{2026}
+\yue{5}
+\ri{20}
+
+\cnabstractkeywords{
+	随着数字文化与虚拟形象产业的快速发展，以“赛博水豚”为代表的拟人化卡通角色逐渐成为新型内容生态的重要组成部分。其中，虚拟角色“噜噜”凭借其温和、稳定且具松弛感的形象特征，在社交媒体与二次创作社区中获得了广泛传播。本文以“赛博水豚”的“养殖”机制为研究对象，从内容生产、情绪价值供给以及用户参与机制三个维度展开分析。
+	研究首先构建了一个基于数字传播路径的“虚拟养殖模型”，探讨角色设定、视觉符号与叙事风格对用户黏性的影响；随后，通过对典型传播案例的观察与归纳，总结出“低刺激—高陪伴”型内容在当代信息环境中的优势；最后，结合平台算法推荐机制，分析“噜噜”形象实现规模化扩散的内在逻辑。
+	结果表明，“赛博水豚”的成功并非偶然，而是多重因素协同作用的结果，其核心在于稳定情绪输出与高可塑性叙事结构的结合。本文的研究为虚拟IP的设计与运营提供了参考，也为理解当代网络文化中的“情绪消费”现象提供了新的视角。
+}{
+	赛博水豚；噜噜；虚拟IP；情绪价值；数字传播
+}
+\enabstractkeywords{
+	With the rapid development of digital culture and virtual character industries, anthropomorphic cartoon figures such as the "Cyber Capybara" have emerged as significant elements in contemporary content ecosystems. Among them, the virtual character "Lulu" has gained remarkable popularity across social media and creative communities due to its calm, stable, and emotionally soothing persona. This paper investigates the so-called "breeding" mechanism of Cyber Capybaras from the perspectives of content production, emotional value delivery, and user engagement.
+	First, a virtual breeding model based on digital dissemination pathways is proposed to analyze how character design, visual symbols, and narrative styles influence user retention. Then, through case observation and qualitative analysis, this study identifies the advantage of "low-stimulation, high-companionship" content in modern information environments. Finally, platform recommendation algorithms are examined to explain the large-scale diffusion of the "Lulu" character.
+	The results indicate that the success of Cyber Capybaras is not incidental but arises from the synergy of multiple factors, particularly the combination of stable emotional output and flexible narrative structures. This research provides insights into virtual IP design and operation, and contributes to a deeper understanding of emotional consumption in online culture.
+}{
+	Cyber Capybara; Lulu; Virtual IP; Emotional Value; Digital Communication
+}
+
+
+
+\begin{document}
+	
+	\pagestyle{plain}
+	\makecover % 封面
+%	\makesignature % 扉页
+	\makeabstract % 摘要
+	
+	% 目录
+	
+	\tableofcontents
+	\newpage
+	
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	
+	% 正文内容
+	% 建议使用 \input{<文件名>} 指令引用其他文件
+	\clearpage
+	\pagestyle{fancy}
+	\fixbaselineskip
+	\input{includes/section_01}
+	\input{includes/section_02}
+	\newpage
+	\clearpage
+	\pagestyle{plain}
+	
+	% 参考文献
+	
+
+	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{参考文献}}
+	\printbibliography
+
+	\newpage
+	
+	% 致谢
+	\addcontentsline{toc}{nonumbersection}{\zihao{4}{\songti{致谢}}}
+	\begin{center}
+		\zihao{-3}{\heiti{致谢}} \\
+	\end{center}
+	\fixbaselineskip
+	感谢奶龙、牛牛、露比，你们都是噜噜的好伙伴。
+	
+\end{document}

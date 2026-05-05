@@ -1,0 +1,145 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{lulu}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6f6f1357e5a7fb658e3e9c999886ce83}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d486e8000b74f1d16ff057958b4c0d85}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Nai},
+           giveni={N\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=6f6f1357e5a7fb658e3e9c999886ce83}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d486e8000b74f1d16ff057958b4c0d85}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Nai},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{fdebff66447a2ecc33abe80490823209}
+      \strng{fullhash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{fullhashraw}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{bibnamehash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{authorbibnamehash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{authornamehash}{fdebff66447a2ecc33abe80490823209}
+      \strng{authorfullhash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{authorfullhashraw}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{nameabibnamehash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{nameanamehash}{fdebff66447a2ecc33abe80490823209}
+      \strng{nameafullhash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{nameafullhashraw}{1a7cdacfead3d4bd42604be91c0e677f}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Trans. Multim.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{About Lu Lu}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{40}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 60}
+      \range{pages}{60}
+      \keyw{lulu}
+    \endentry
+    \entry{nailong}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=6f6f1357e5a7fb658e3e9c999886ce83}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d486e8000b74f1d16ff057958b4c0d85}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Nai},
+           giveni={N\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=6f6f1357e5a7fb658e3e9c999886ce83}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d486e8000b74f1d16ff057958b4c0d85}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Nai},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{fdebff66447a2ecc33abe80490823209}
+      \strng{fullhash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{fullhashraw}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{bibnamehash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{authorbibnamehash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{authornamehash}{fdebff66447a2ecc33abe80490823209}
+      \strng{authorfullhash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{authorfullhashraw}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{nameabibnamehash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{nameanamehash}{fdebff66447a2ecc33abe80490823209}
+      \strng{nameafullhash}{1a7cdacfead3d4bd42604be91c0e677f}
+      \strng{nameafullhashraw}{1a7cdacfead3d4bd42604be91c0e677f}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{CVPR}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{About Nai Long}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{5998\bibrangedash 6008}
+      \range{pages}{11}
+      \keyw{nailong}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
