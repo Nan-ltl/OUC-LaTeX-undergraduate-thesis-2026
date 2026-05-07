@@ -9,7 +9,7 @@
 	\zihao{-4}  % 小四号字
 	\fixbaselineskip
 }
-%\RequirePackage{CJKutf8}
+
 
 % \RequirePackage[UTF8,scheme=plain]{ctex}
 
@@ -20,8 +20,21 @@
 \RequirePackage{setspace}
 \RequirePackage{subfigure}
 \RequirePackage{titlesec}
+\titlespacing*{\section}
+{0pt}
+{0pt}
+{0pt}
+\titlespacing*{\subsection}
+{0pt}
+{0pt}
+{0pt}
+\titlespacing*{\subsubsection}
+{0pt}
+{0pt}
+{0pt}
 \RequirePackage{titletoc}
 \RequirePackage{ulem}
+\setCJKfamilyfont{hei}{SimHei}
 
 % 页边距设置
 \RequirePackage{geometry}
@@ -82,16 +95,16 @@
 
 % 修改标题样式
 \titleformat{\section}
-            {\zihao{3}\fixbaselineskip\heiti\raggedright}
-            {\zihao{3}\fixbaselineskip\heiti\fontspec{SimHei}{\raggedright\arabic{section}}}{1em}
+            {\zihao{3}\heiti\fixbaselineskip\raggedright}
+            {\zihao{3}\heiti\fixbaselineskip\fontspec{SimHei}{\raggedright\arabic{section}}}{1em}
             {}
 \titleformat{\subsection}
-            {\zihao{4}\fixbaselineskip\heiti\raggedright}
-            {\zihao{4}\fixbaselineskip\heiti\fontspec{SimHei}\raggedright\arabic{section}.\arabic{subsection}}{1em}
+            {\zihao{4}\heiti\fixbaselineskip\raggedright}
+            {\zihao{4}\heiti\fixbaselineskip\fontspec{SimHei}\raggedright\arabic{section}.\arabic{subsection}}{1em}
             {}
 \titleformat{\subsubsection}
-            {\zihao{4}\fixbaselineskip\heiti\raggedright}
-            {\zihao{4}\fixbaselineskip\heiti\fontspec{SimHei}\raggedright\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}{1em}
+            {\zihao{4}\heiti\fixbaselineskip\raggedright}
+            {\zihao{4}\heiti\fixbaselineskip\fontspec{SimHei}\raggedright\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}{1em}
             {}
 % 修改目录样式
 \titlecontents{section}

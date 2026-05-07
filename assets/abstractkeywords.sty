@@ -6,14 +6,14 @@
 \RequirePackage{abstract}
 \RequirePackage{fontspec}
 
-\newcommand*{\cnabstractkeywords}[2]{
-  \def\@cnabstract{#1}
-  \def\@cnkeywords{#2}
+\long\def\cnabstractkeywords#1#2{
+	\def\@cnabstract{#1}
+	\def\@cnkeywords{#2}
 }
 
-\newcommand*{\enabstractkeywords}[2]{
-  \def\@enabstract{#1}
-  \def\@enkeywords{#2}
+\long\def\enabstractkeywords#1#2{
+	\def\@enabstract{#1}
+	\def\@enkeywords{#2}
 }
 
 \newcommand{\fixbaselineskip}{%
@@ -23,33 +23,31 @@
 }
 
 \newcommand*{\makeabstract}{
-  \newpage
-  \pagenumbering{Roman}
-  \begin{center}
-      \zihao{3}{\heiti{\@title}}
-  \end{center}
-  \ifdefined\@cnabstract{
-    \renewcommand\abstractname{\zihao{3}{\heiti{摘\ \ \ 要}}}
-    \begin{abstract}
-      \zihao{-4}\fixbaselineskip\songti{\@cnabstract}\par
-      
-      \zihao{-4}\fixbaselineskip \heiti{\textbf{关键词：\@cnkeywords}}
-    \end{abstract}
-    \vspace{5mm}
-    \newpage
-  }
-  \fi
-  \ifdefined\@enabstract{
-    \begin{center}
-        \zihao{3}{\heiti{\textbf{\@entitle}}}
-    \end{center}
-    \renewcommand\abstractname{\zihao{3}{\heiti{Abstract}}}
-    \begin{abstract}
-      \zihao{4}\fixbaselineskip\setmainfont{Times New Roman}\@enabstract\par
-      
-      \zihao{4}\fixbaselineskip \heiti{\textbf{Keywords:\@enkeywords}}
-    \end{abstract}
-  }
-  \fi
-  \newpage
+	\newpage
+	\pagenumbering{Roman}
+	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{摘要}}
+	{\centering
+		\zihao{3}\fixbaselineskip\heiti{\@title} \par
+		\heiti{摘\ \ \ 要}\par}
+	
+
+	\ifdefined\@cnabstract
+	\zihao{-4}\fixbaselineskip\songti\@cnabstract\par
+	\zihao{-4}\fixbaselineskip\heiti\textbf{关键词：\@cnkeywords} 
+	\newpage
+	\fi
+	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{Abstract}}
+	\ifdefined\@enabstract
+		{\centering
+		\zihao{3}\fixbaselineskip\heiti{\textbf{\@entitle}\par
+		Abstract\par}}
+	
+	\renewcommand\abstractname{\zihao{3}\fixbaselineskip\heiti{Abstract}}
+
+	\zihao{4}\fixbaselineskip\setmainfont{Times New Roman}\@enabstract\par
+	
+	\zihao{4}\fixbaselineskip\heiti\textbf{Keywords:\@enkeywords} 
+
+	\fi
+	\newpage
 }
