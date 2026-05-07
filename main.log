@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.30)  5 MAY 2026 11:16
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.30)  7 MAY 2026 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,6 +407,16 @@ Package: titletoc 2025/01/04 v2.17 TOC entries
 Package: ulem 2019/11/18
 \ULdepth=\dimen273
 )
+(d:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen274
+\ar@mcellbox=\box62
+\extrarowheight=\dimen275
+\NC@list=\toks25
+\extratabsurround=\skip71
+\backup@length=\skip72
+\ar@cellbox=\box63
+)
 (d:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -419,34 +429,34 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@cnth=\count320
 \Gm@cntv=\count321
 \c@Gm@tempcnt=\count322
-\Gm@bindingoffset=\dimen274
-\Gm@wd@mp=\dimen275
-\Gm@odd@mp=\dimen276
-\Gm@even@mp=\dimen277
-\Gm@layoutwidth=\dimen278
-\Gm@layoutheight=\dimen279
-\Gm@layouthoffset=\dimen280
-\Gm@layoutvoffset=\dimen281
-\Gm@dimlist=\toks25
+\Gm@bindingoffset=\dimen276
+\Gm@wd@mp=\dimen277
+\Gm@odd@mp=\dimen278
+\Gm@even@mp=\dimen279
+\Gm@layoutwidth=\dimen280
+\Gm@layoutheight=\dimen281
+\Gm@layouthoffset=\dimen282
+\Gm@layoutvoffset=\dimen283
+\Gm@dimlist=\toks26
 )
 (d:/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip71
-\f@nch@offset@elh=\skip72
-\f@nch@offset@erh=\skip73
-\f@nch@offset@olh=\skip74
-\f@nch@offset@orh=\skip75
-\f@nch@offset@elf=\skip76
-\f@nch@offset@erf=\skip77
-\f@nch@offset@olf=\skip78
-\f@nch@offset@orf=\skip79
-\f@nch@height=\skip80
-\f@nch@footalignment=\skip81
-\f@nch@widthL=\skip82
-\f@nch@widthC=\skip83
-\f@nch@widthR=\skip84
-\@temptokenb=\toks26
+\f@nch@headwidth=\skip73
+\f@nch@offset@elh=\skip74
+\f@nch@offset@erh=\skip75
+\f@nch@offset@olh=\skip76
+\f@nch@offset@orh=\skip77
+\f@nch@offset@elf=\skip78
+\f@nch@offset@erf=\skip79
+\f@nch@offset@olf=\skip80
+\f@nch@offset@orf=\skip81
+\f@nch@height=\skip82
+\f@nch@footalignment=\skip83
+\f@nch@widthL=\skip84
+\f@nch@widthC=\skip85
+\f@nch@widthR=\skip86
+\@temptokenb=\toks27
 )
 (./assets/cover.sty
 Package: assets/cover 2015/05/20 Cover Page
@@ -454,33 +464,33 @@ Package: assets/cover 2015/05/20 Cover Page
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count323
 \calc@Bcount=\count324
-\calc@Adimen=\dimen282
-\calc@Bdimen=\dimen283
-\calc@Askip=\skip85
-\calc@Bskip=\skip86
+\calc@Adimen=\dimen284
+\calc@Bdimen=\dimen285
+\calc@Askip=\skip87
+\calc@Bskip=\skip88
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count325
-\calc@Cskip=\skip87
+\calc@Cskip=\skip89
 )
-\labelwidthtmp=\skip88
+\labelwidthtmp=\skip90
 )
 (./assets/abstractkeywords.sty
 Package: assets/abstractkeywords 2015/05/20 Abstract and Keyword Page
 
 (d:/texlive/2025/texmf-dist/tex/latex/abstract/abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
-\abstitleskip=\skip89
-\absleftindent=\skip90
-\absrightindent=\skip91
-\absparindent=\skip92
-\absparsep=\skip93
+\abstitleskip=\skip91
+\absleftindent=\skip92
+\absrightindent=\skip93
+\absparindent=\skip94
+\absparsep=\skip95
 ))
 (./assets/signature.sty
 Package: assets/signature 2018/05/15 Signature Page
 )
 Package caption Info: Option `figurewithin=section' requires the `newfloat' pac
-kage on input line 126.
+kage on input line 155.
 
 (d:/texlive/2025/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
@@ -512,19 +522,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (d:/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks27
-\verbatim@line=\toks28
+\every@verbatim=\toks28
+\verbatim@line=\toks29
 \verbatim@in@stream=\read2
-)
-(d:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
-Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen284
-\ar@mcellbox=\box62
-\extrarowheight=\dimen285
-\NC@list=\toks29
-\extratabsurround=\skip94
-\backup@length=\skip95
-\ar@cellbox=\box63
 )
 (d:/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
@@ -1291,32 +1291,6 @@ LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
 
 
 [1]
-Overfull \hbox (1.5641pt too wide) in paragraph at lines 74--74
-\TU/TimesNewRoman(0)/m/n/14.05249 rary content ecosystems. Among them, the virt
-ual character ”Lulu”
- []
-
-
-Overfull \hbox (1.18217pt too wide) in paragraph at lines 74--74
-[]\TU/TimesNewRoman(0)/b/n/14.05249 Keywords: Cyber Capybara; Lulu; Virtual IP;
- Emotional
- []
-
-
-
-[2] (./main.toc
-
-Package titletoc Warning: Unknown TOC type nonumbersection. I'll set it for you
- with
-(titletoc)                level -1000. on input line 9.
-
-)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-
-
-[3] (./includes/section_01.tex
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "SimHei/BI" (it probably doesn't
@@ -1343,6 +1317,35 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"SimHei/OT:script=latn;language=dflt;"
 
+
+Overfull \hbox (1.27565pt too wide) in paragraph at lines 74--74
+\TU/TimesNewRoman(0)/m/n/14.05249 dustries, anthropomorphic cartoon figures suc
+h as the ”Cyber Capybara” have
+ []
+
+
+Overfull \hbox (1.04587pt too wide) in paragraph at lines 74--74
+\TU/TimesNewRoman(0)/m/n/14.05249 emerged as significant elements in contempora
+ry content ecosystems. Among
+ []
+
+
+
+[2] (./main.toc
+
+Package titletoc Warning: Unknown TOC type nonumbersection. I'll set it for you
+ with
+(titletoc)                level -1000. on input line 1.
+
+)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+
+[3
+
+] (./includes/section_01.tex
 File: images/lulu.pdf Graphic file (type pdf)
 <use images/lulu.pdf>
 ) (./includes/section_02.tex
@@ -1373,11 +1376,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23553 strings out of 473832
- 513723 string characters out of 5733158
- 1472737 words of memory out of 5000000
- 46193 multiletter control sequences out of 15000+600000
- 566472 words of font info for 128 fonts, out of 8000000 for 9000
+ 23545 strings out of 473832
+ 513392 string characters out of 5733158
+ 1472622 words of memory out of 5000000
+ 46187 multiletter control sequences out of 15000+600000
+ 566456 words of font info for 126 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  108i,11n,125p,693b,5135s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
