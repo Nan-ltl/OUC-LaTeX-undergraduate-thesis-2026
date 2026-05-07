@@ -85,6 +85,8 @@ gbnamefmt=lowercase
 	% 建议使用 \input{<文件名>} 指令引用其他文件
 	\clearpage
 	\pagestyle{fancy}
+	\zihao{-4}
+	\songti
 	\fixbaselineskip
 	\input{includes/section_01}
 	\input{includes/section_02}
@@ -102,9 +104,11 @@ gbnamefmt=lowercase
 	
 	% 致谢
 	\addcontentsline{toc}{nonumbersection}{\zihao{4}{\songti{致谢}}}
-	\begin{center}
-		\zihao{-3}{\heiti{致谢}} \\
-	\end{center}
+	{\centering
+		\zihao{-3}{\heiti{致谢}}\par
+	}
+	\zihao{-4}
+	\songti
 	\fixbaselineskip
 	感谢奶龙、牛牛、露比，你们都是噜噜的好伙伴。
 	
