@@ -53,7 +53,20 @@
 \RequirePackage{assets/signature}
 
 % ``目录'', ``参考文献''样式
-\renewcommand{\contentsname}{\centerline{\zihao{3}{\heiti{目\ \ \ 录}}}}
+	\renewcommand{\tableofcontents}{
+	\clearpage
+	
+	\vspace*{-\topskip}
+	
+	{\centering
+		\zihao{3}\fixbaselineskip\heiti{目\ \ \ 录}\par
+	}
+	\begingroup
+	\setlength{\parskip}{0pt}
+	\@starttoc{toc}
+	\endgroup
+}
+
 
 
 % 调整页边距

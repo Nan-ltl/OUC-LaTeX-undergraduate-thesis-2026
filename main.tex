@@ -74,7 +74,7 @@ gbnamefmt=lowercase
 	\makeabstract % 摘要
 	
 	% 目录
-	
+
 	\tableofcontents
 	\newpage
 	
@@ -99,16 +99,32 @@ gbnamefmt=lowercase
 
 	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{参考文献}}
 	{\centering
-		\zihao{3}\fixbaselineskip\heiti 参考文献\par}
-	\setlength{\itemsep}{0pt}
-	\setlength{\parsep}{0pt}
-	\setlength{\topsep}{0pt}
-	\setlength{\partopsep}{0pt}
-	\setlength{\itemindent}{0pt}
-	\setlength{\listparindent}{0pt}
-	\setlength{\rightmargin}{0pt}
-	\setlength{\bibitemsep}{0pt}
-	\setlength{\bibparsep}{0pt}
+	\zihao{-3}\fixbaselineskip\heiti 参考文献\par}
+	\defbibenvironment{bibliography}
+	{\list
+		{\printtext[labelnumberwidth]{%
+				\printfield{labelprefix}%
+				\printfield{labelnumber}}}
+		{%
+			\setlength{\labelwidth}{\labelnumberwidth}%
+			\setlength{\labelsep}{\biblabelsep}%
+			\setlength{\leftmargin}{\labelwidth}%
+			\addtolength{\leftmargin}{\labelsep}%
+			\setlength{\itemsep}{\bibitemsep}%
+			\setlength{\parsep}{\bibparsep}%
+			% 清零列表自身的顶部/段落额外间距
+			\setlength{\topsep}{0pt}%
+			\setlength{\partopsep}{0pt}%
+			\setlength{\itemsep}{0pt}%
+			\setlength{\parsep}{0pt}%
+			\setlength{\itemindent}{0pt}%
+			\setlength{\listparindent}{0pt}%
+			\setlength{\rightmargin}{0pt}%
+			\usecounter{instcount}%
+		}%
+	}
+	{\endlist}
+	{\item}
 	\printbibliography[heading=none]
 	\newpage
 	
