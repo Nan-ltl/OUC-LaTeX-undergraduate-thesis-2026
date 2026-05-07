@@ -35,6 +35,9 @@
 \RequirePackage{titletoc}
 \RequirePackage{ulem}
 \setCJKfamilyfont{hei}{SimHei}
+\RequirePackage{array}
+\renewcommand{\arraystretch}{1}
+\setlength{\extrarowheight}{9.5pt}
 
 % 页边距设置
 \RequirePackage{geometry}
@@ -51,7 +54,7 @@
 
 % ``目录'', ``参考文献''样式
 \renewcommand{\contentsname}{\centerline{\zihao{3}{\heiti{目\ \ \ 录}}}}
-\renewcommand{\refname}{\centerline{\zihao{-3} \heiti{参考文献}}}
+
 
 % 调整页边距
 \geometry{top=2.54cm,bottom=2.54cm,left=3cm,right=3cm} 

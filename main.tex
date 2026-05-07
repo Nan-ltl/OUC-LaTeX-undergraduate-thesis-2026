@@ -98,8 +98,18 @@ gbnamefmt=lowercase
 	
 
 	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{参考文献}}
-	\printbibliography
-
+	{\centering
+		\zihao{3}\fixbaselineskip\heiti 参考文献\par}
+	\setlength{\itemsep}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\topsep}{0pt}
+	\setlength{\partopsep}{0pt}
+	\setlength{\itemindent}{0pt}
+	\setlength{\listparindent}{0pt}
+	\setlength{\rightmargin}{0pt}
+	\setlength{\bibitemsep}{0pt}
+	\setlength{\bibparsep}{0pt}
+	\printbibliography[heading=none]
 	\newpage
 	
 	% 致谢
