@@ -30,24 +30,24 @@
 		\zihao{3}\fixbaselineskip\heiti{\@title} \par
 		\heiti{摘\ \ \ 要}\par}
 	
-
+	
 	\ifdefined\@cnabstract
 	\zihao{-4}\fixbaselineskip\songti\@cnabstract\par
-	\zihao{-4}\fixbaselineskip\heiti\textbf{关键词：\@cnkeywords} 
+	\zihao{-4}\fixbaselineskip\heiti 关键词：\textbf{\@cnkeywords} 
 	\newpage
 	\fi
 	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{Abstract}}
 	\ifdefined\@enabstract
-		{\centering
-		\zihao{3}\fixbaselineskip\fontspec{SimHei}{\@entitle\par
-		Abstract\par}}
+	{\centering
+		\zihao{3}\fixbaselineskip\heiti{\@entitle\par
+			Abstract\par}}
 	
 	\renewcommand\abstractname{\zihao{3}\fixbaselineskip\heiti{Abstract}}
-
-		\zihao{4}\fixbaselineskip\setmainfont{Times New Roman}\@enabstract\par
-		
-		\zihao{4}\fixbaselineskip\heiti\textbf{Keywords:\@enkeywords} 
-
+	
+	\zihao{4}\fixbaselineskip\setmainfont{Times New Roman}\@enabstract\par
+	
+	\zihao{4}\fixbaselineskip\heiti\textbf{Keywords:\@enkeywords} 
+	
 	\fi
 	\newpage
 }
