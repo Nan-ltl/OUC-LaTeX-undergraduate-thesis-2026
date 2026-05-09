@@ -19,6 +19,16 @@
 \usepackage{arydshln}
 \usepackage{setspace}
 \usepackage{etoolbox}
+\usepackage{enumitem}
+\setlist{nosep} 
+\usepackage[%
+colorlinks=false,        % 启用颜色链接（自动去掉边框）
+linkcolor=black,        % 内部链接（目录、交叉引用）为黑色
+citecolor=black,        % 参考文献引用为黑色
+urlcolor=black,         % URL链接为黑色
+filecolor=black,        % 文件链接为黑色
+pdfborder={0 0 0}       % 额外确保边框为0
+]{hyperref}
 \frenchspacing
 \setmainfont{Times New Roman}
 \usepackage[
@@ -88,6 +98,10 @@ gbnamefmt=lowercase
 	\zihao{-4}
 	\songti
 	\fixbaselineskip
+	\setlength{\tabcolsep}{6pt}
+	\setlength{\floatsep}{6pt}
+	\setlength{\textfloatsep}{6pt}
+	\setlength{\intextsep}{6pt}
 	\input{includes/section_01}
 	\input{includes/section_02}
 	\newpage
