@@ -9,7 +9,8 @@
 	\zihao{-4}  % 小四号字
 	\fixbaselineskip
 }
-
+\setCJKfamilyfont{zhsong}{SimSun}[AutoFakeBold]
+\renewcommand{\songti}{\CJKfamily{zhsong}}
 
 % \RequirePackage[UTF8,scheme=plain]{ctex}
 
