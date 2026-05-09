@@ -11,8 +11,8 @@
 }
 \setCJKfamilyfont{zhsong}{simsun.ttf}[AutoFakeBold]
 \renewcommand{\songti}{\CJKfamily{zhsong}}
-\setCJKfamilyfont{myhei}{simhei.ttf}[AutoFakeBold]
-\renewcommand{\heiti}{\CJKfamily{myhei}}
+\setCJKfamilyfont{myhei}{SimHei}[AutoFakeBold]
+\renewcommand{\heiti}{\fontspec{SimHei}}
 
 % \RequirePackage[UTF8,scheme=plain]{ctex}
 

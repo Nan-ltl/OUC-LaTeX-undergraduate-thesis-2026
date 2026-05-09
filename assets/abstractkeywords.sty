@@ -5,6 +5,11 @@
 
 \RequirePackage{abstract}
 \RequirePackage{fontspec}
+\RequirePackage{ctex}
+\setCJKfamilyfont{zhsong}{simsun.ttf}[AutoFakeBold]
+\renewcommand{\songti}{\CJKfamily{zhsong}}
+\setCJKfamilyfont{myhei}{SimHei}[AutoFakeBold]
+\renewcommand{\heiti}{\fontspec{SimHei}}
 
 \long\def\cnabstractkeywords#1#2{
 	\def\@cnabstract{#1}
@@ -46,7 +51,7 @@
 	
 	\zihao{4}\fixbaselineskip\setmainfont{Times New Roman}\@enabstract\par
 	
-	\zihao{4}\fixbaselineskip\heiti\textbf{Keywords:\@enkeywords} 
+	\zihao{4}\fixbaselineskip\setmainfont{Times New Roman}\textbf{Keywords:\@enkeywords} 
 	
 	\fi
 	\newpage
