@@ -9,9 +9,9 @@
 	\zihao{-4}  % 小四号字
 	\fixbaselineskip
 }
-\setCJKfamilyfont{zhsong}{SimSun}[AutoFakeBold]
+\setCJKfamilyfont{zhsong}{simsun.ttf}[AutoFakeBold]
 \renewcommand{\songti}{\CJKfamily{zhsong}}
-\setCJKfamilyfont{myhei}{SimHei}[AutoFakeBold]
+\setCJKfamilyfont{myhei}{simhei.ttf}[AutoFakeBold]
 \renewcommand{\heiti}{\CJKfamily{myhei}}
 
 % \RequirePackage[UTF8,scheme=plain]{ctex}
