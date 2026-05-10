@@ -19,6 +19,7 @@
 \usepackage{arydshln}
 \usepackage{setspace}
 \usepackage{etoolbox}
+\usepackage{pdfpages}
 \usepackage{enumitem}
 \setlist{nosep} 
 \usepackage[%
@@ -50,14 +51,6 @@ gbnamefmt=lowercase
 \addbibresource{ref.bib}
 \title{关于赛博水豚的养殖研究}
 \entitle{Research on the Breeding of Cyber Capybaras}
-\author{噜噜}
-\studentid{001}
-\advisor{奶龙}
-\college{农业学院}
-\department{动物养殖工程}
-\nian{2026}
-\yue{5}
-\ri{20}
 
 \cnabstractkeywords{
 	随着数字文化与虚拟形象产业的快速发展，以“赛博水豚”为代表的拟人化卡通角色逐渐成为新型内容生态的重要组成部分。其中，虚拟角色“噜噜”凭借其温和、稳定且具松弛感的形象特征，在社交媒体与二次创作社区中获得了广泛传播。本文以“赛博水豚”的“养殖”机制为研究对象，从内容生产、情绪价值供给以及用户参与机制三个维度展开分析。
@@ -79,8 +72,9 @@ gbnamefmt=lowercase
 \begin{document}
 	
 	\pagestyle{plain}
-	\makecover % 封面
-%	\makesignature % 扉页
+	% 封面由wps的word转pdf生成，对于本科生来说可以使用wps的教育版，能免费word转pdf。
+	% 关于wps教育版的信息见公众号：https://mp.weixin.qq.com/s/zmVykNJ8FuycyeQflQPNnA
+	\includepdf[pages=1]{images/cover.pdf}
 	\makeabstract % 摘要
 	
 	% 目录

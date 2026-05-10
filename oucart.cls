@@ -10,9 +10,9 @@
 	\fixbaselineskip
 }
 
-\setCJKfamilyfont{zhsong}{simsun.ttf}[AutoFakeBold]
+\setCJKfamilyfont{zhsong}{simsun.ttf}[AutoFakeBold=3]
 \renewcommand{\songti}{\CJKfamily{zhsong}}
-\setCJKfamilyfont{myhei}{simhei.ttf}[AutoFakeBold]
+\setCJKfamilyfont{myhei}{simhei.ttf}[AutoFakeBold=3]
 \newcommand{\enheiti}{\fontspec[Path=./]{simhei.ttf}}
 \renewcommand{\heiti}{\CJKfamily{myhei}}
 
@@ -53,9 +53,7 @@
 % 页码
 \cfoot{\zihao{-5}\thepage}
 
-\RequirePackage{assets/cover}
 \RequirePackage{assets/abstractkeywords}
-\RequirePackage{assets/signature}
 
 % ``目录'', ``参考文献''样式
 \renewcommand{\tableofcontents}{
@@ -85,27 +83,6 @@
 % 定义基本信息
 \newcommand*{\entitle}[1]{
 	\def\@entitle{#1}
-}
-\newcommand*{\advisor}[1]{
-	\def\@advisor{#1}
-}
-\newcommand*{\studentid}[1]{
-	\def\@studentid{#1}
-}
-\newcommand*{\college}[1]{
-	\def\@college{#1}
-}
-\newcommand*{\department}[1]{
-	\def\@department{#1}
-}
-\newcommand*{\nian}[1]{
-	\def\@nian{#1}
-}
-\newcommand*{\yue}[1]{
-	\def\@yue{#1}
-}
-\newcommand*{\ri}[1]{
-	\def\@ri{#1}
 }
 
 \lhead{}
