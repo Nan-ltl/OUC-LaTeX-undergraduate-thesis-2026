@@ -7,6 +7,7 @@
 \RequirePackage{fontspec}
 \RequirePackage{ctex}
 
+
 \long\def\cnabstractkeywords#1#2{
 	\def\@cnabstract{#1}
 	\def\@cnkeywords{#2}
@@ -34,17 +35,15 @@
 	
 	\ifdefined\@cnabstract
 	\zihao{-4}\fixbaselineskip\songti\@cnabstract\par
-	\zihao{-4}\fixbaselineskip\heiti 关键词：\textbf{\@cnkeywords} 
+	{\zihao{-4}\fixbaselineskip\heiti 关键词：\textbf{\@cnkeywords} }
 	\newpage
 	\fi
 	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{Abstract}}
 	\ifdefined\@enabstract
 	{\centering
-		\zihao{3}\fixbaselineskip\fontspec{SimHei}{\@entitle\par
+		\zihao{3}\fixbaselineskip\enheiti{\@entitle\par
 			Abstract\par}}
-	
-	\renewcommand\abstractname{\zihao{3}\fixbaselineskip\heiti{Abstract}}
-	
+
 	\zihao{4}\fixbaselineskip\setmainfont{Times New Roman}\@enabstract\par
 	
 	\zihao{4}\fixbaselineskip\setmainfont{Times New Roman}\textbf{Keywords:\@enkeywords} 

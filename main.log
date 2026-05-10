@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.30)  9 MAY 2026 18:54
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.30)  10 MAY 2026 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,7 +493,7 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 Package: assets/signature 2018/05/15 Signature Page
 )
 Package caption Info: Option `figurewithin=section' requires the `newfloat' pac
-kage on input line 158.
+kage on input line 160.
 
 (d:/texlive/2025/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
@@ -1245,31 +1245,18 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 79.
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "SimSun/I" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "SimSun/BI" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "SimSun/I" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'SimSun(1)' created for font 'SimSun' with
-(fontspec)             options [Script={CJK},AutoFakeBold={4}].
+(fontspec)             Font family 'simsun.ttf(0)' created for font
+(fontspec)             'simsun.ttf' with options
+(fontspec)             [Script={CJK},AutoFakeBold={4}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+(fontspec)             <->"[simsun.ttf]/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"SimSun/OT:script=hani;language=dflt;embolden=4;"
+(fontspec)             <->"[simsun.ttf]/OT:script=hani;language=dflt;embolden=4
+;"
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1352,31 +1339,18 @@ File: assets/logo.eps Graphic file (type eps)
 <assets/logo.eps>
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "SimHei/I" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "SimHei/BI" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "SimHei/I" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'SimHei(0)' created for font 'SimHei' with
-(fontspec)             options [Script={CJK},AutoFakeBold={4}].
+(fontspec)             Font family 'simhei.ttf(0)' created for font
+(fontspec)             'simhei.ttf' with options
+(fontspec)             [Script={CJK},AutoFakeBold={4}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
+(fontspec)             <->"[simhei.ttf]/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"SimHei/OT:script=hani;language=dflt;embolden=4;"
+(fontspec)             <->"[simhei.ttf]/OT:script=hani;language=dflt;embolden=4
+;"
 
 
 Package fontspec Info: 
@@ -1428,6 +1402,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\zihao' on input line 84.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'simhei.ttf(1)' created for font
+(fontspec)             'simhei.ttf' with options [Path=./].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./simhei.ttf]/OT:language=dflt;"
 
 
 Overfull \hbox (1.27565pt too wide) in paragraph at lines 84--84
@@ -1500,11 +1485,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29928 strings out of 473832
- 613002 string characters out of 5733158
- 1578988 words of memory out of 5000000
- 52504 multiletter control sequences out of 15000+600000
- 566768 words of font info for 121 fonts, out of 8000000 for 9000
+ 29941 strings out of 473832
+ 614152 string characters out of 5733158
+ 1579080 words of memory out of 5000000
+ 52503 multiletter control sequences out of 15000+600000
+ 566864 words of font info for 133 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  108i,11n,125p,693b,5148s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
