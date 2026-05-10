@@ -9,6 +9,7 @@
 	\zihao{-4}  % 小四号字
 	\fixbaselineskip
 }
+
 \setCJKfamilyfont{zhsong}{SimSun}[AutoFakeBold]
 \renewcommand{\songti}{\CJKfamily{zhsong}}
 \setCJKfamilyfont{myhei}{SimHei}[AutoFakeBold]
@@ -115,15 +116,15 @@
 % 修改标题样式
 \titleformat{\section}
 {\zihao{3}\heiti\fixbaselineskip\raggedright}
-{\zihao{3}\heiti\fixbaselineskip\heiti{\raggedright\arabic{section}}}{1em}
+{\zihao{3}\fontspec{SimHei}\fixbaselineskip{\raggedright\arabic{section}}}{1em}
 {}
 \titleformat{\subsection}
 {\zihao{4}\heiti\fixbaselineskip\raggedright}
-{\zihao{4}\heiti\fixbaselineskip\heiti\raggedright\arabic{section}.\arabic{subsection}}{1em}
+{\zihao{4}\fontspec{SimHei}\fixbaselineskip\raggedright\arabic{section}.\arabic{subsection}}{1em}
 {}
 \titleformat{\subsubsection}
 {\zihao{4}\heiti\fixbaselineskip\raggedright}
-{\zihao{4}\heiti\fixbaselineskip\heiti\raggedright\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}{1em}
+{\zihao{4}\fontspec{SimHei}\fixbaselineskip\raggedright\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}{1em}
 {}
 % 修改目录样式
 \titlecontents{section}
