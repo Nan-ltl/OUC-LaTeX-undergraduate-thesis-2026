@@ -153,7 +153,7 @@
 \DeclareCaptionFont{ouccaptionfont}{\zihao{5}\fixbaselineskip\songti}
 \captionsetup{
 	font=ouccaptionfont,
-	labelsep=quad
+	labelsep=space
 }
 
 % 表题在上方
