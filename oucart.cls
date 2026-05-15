@@ -22,6 +22,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{caption}
 \RequirePackage{graphicx}
+\RequirePackage{float}
 \RequirePackage{setspace}
 \RequirePackage{subfigure}
 \RequirePackage{titlesec}
@@ -41,8 +42,13 @@
 \RequirePackage{ulem}
 \setCJKfamilyfont{hei}{SimHei}
 \RequirePackage{array}
-\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}    % 计算值
 \setlength{\extrarowheight}{9.5pt}
+\setlength{\tabcolsep}{6pt}
+\setlength{\intextsep}{3pt}
+\setlength{\textfloatsep}{9pt}
+\setlength{\floatsep}{6pt}
+
 
 % 页边距设置
 \RequirePackage{geometry}
@@ -142,8 +148,27 @@
 \renewcommand\thefigure{\arabic{section}-\arabic{figure}}
 \renewcommand\thetable{\arabic{section}-\arabic{table}}
 \renewcommand{\theequation}{\arabic{section}-\arabic{equation}}
+
 \renewcommand{\labelenumi}{(\theenumi)}
-\renewcommand{\captionfont}{\zihao{5}\fixbaselineskip\songti} 
+\DeclareCaptionFont{ouccaptionfont}{\zihao{5}\fixbaselineskip\songti}
+\captionsetup{
+	font=ouccaptionfont,
+	labelsep=quad
+}
+
+% 表题在上方
+\captionsetup[table]{
+	position=top,
+	aboveskip=3pt,
+	belowskip=12pt
+}
+
+% 图题在下方
+\captionsetup[figure]{
+	position=bottom,
+	aboveskip=6pt,
+	belowskip=0pt
+}
 \RequirePackage{etoolbox}
 
 \makeatletter
@@ -151,4 +176,5 @@
 	\maketag@@@{\zihao{5}\setmainfont{Times New Roman} (#1)}%
 }
 \makeatother
+
 
