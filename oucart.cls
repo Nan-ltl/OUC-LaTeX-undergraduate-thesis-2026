@@ -136,10 +136,12 @@
 % 图、表、公式样式
 \captionsetup{figurewithin=section}
 \captionsetup{tablewithin=section}
+\counterwithin{equation}{section}
 \renewcommand{\figurename}{图}
 \renewcommand{\tablename}{表}
 \renewcommand\thefigure{\arabic{section}-\arabic{figure}}
 \renewcommand\thetable{\arabic{section}-\arabic{table}}
+\renewcommand{\theequation}{\arabic{section}-\arabic{equation}}
 \renewcommand{\labelenumi}{(\theenumi)}
 \renewcommand{\captionfont}{\zihao{5}\fixbaselineskip\songti} 
 \RequirePackage{etoolbox}
