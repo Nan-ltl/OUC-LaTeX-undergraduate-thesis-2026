@@ -48,7 +48,14 @@
 \setlength{\intextsep}{3pt}
 \setlength{\textfloatsep}{9pt}
 \setlength{\floatsep}{6pt}
-
+\RequirePackage[%
+colorlinks=false,        % 启用颜色链接（自动去掉边框）
+linkcolor=black,        % 内部链接（目录、交叉引用）为黑色
+citecolor=black,        % 参考文献引用为黑色
+urlcolor=black,         % URL链接为黑色
+filecolor=black,        % 文件链接为黑色
+pdfborder={0 0 0}       % 额外确保边框为0
+]{hyperref}
 
 % 页边距设置
 \RequirePackage{geometry}
@@ -62,6 +69,48 @@
 \RequirePackage{assets/abstractkeywords}
 
 % ``目录'', ``参考文献''样式
+\RequirePackage[
+backend=biber,
+style=gb7714-2015,
+gbnamefmt=lowercase 
+]{biblatex}
+% 参考文献格式
+\AtBeginBibliography{
+	\zihao{-4}
+	\songti
+	\fixbaselineskip
+}
+\renewbibmacro{in:}{\setunit{\addperiod\space}}
+\renewbibmacro{publisher+location+date}{%
+	\setunit{\addcomma\space}%
+	\printfield{year}%
+}
+\addbibresource{ref.bib}
+\defbibenvironment{bibliography}
+{\list
+	{\printtext[labelnumberwidth]{%
+			\printfield{labelprefix}%
+			\printfield{labelnumber}}}
+	{%
+		\setlength{\labelwidth}{\labelnumberwidth}%
+		\setlength{\labelsep}{\biblabelsep}%
+		\setlength{\leftmargin}{\labelwidth}%
+		\addtolength{\leftmargin}{\labelsep}%
+		\setlength{\itemsep}{\bibitemsep}%
+		\setlength{\parsep}{\bibparsep}%
+		% 清零列表自身的顶部/段落额外间距
+		\setlength{\topsep}{0pt}%
+		\setlength{\partopsep}{0pt}%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parsep}{0pt}%
+		\setlength{\itemindent}{0pt}%
+		\setlength{\listparindent}{0pt}%
+		\setlength{\rightmargin}{0pt}%
+		\usecounter{instcount}%
+	}%
+}
+{\endlist}
+{\item}
 \renewcommand{\tableofcontents}{
 	\clearpage
 	

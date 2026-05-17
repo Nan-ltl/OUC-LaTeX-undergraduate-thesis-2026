@@ -1,5 +1,5 @@
-\contentsline {nonumbersection}{\zihao {4}\CJKfamily {zhsong}{摘要}}{I}{Doc-Start}%
-\contentsline {nonumbersection}{\zihao {4}\CJKfamily {zhsong}{Abstract}}{II}{Doc-Start}%
+\contentsline {nonumbersection}{摘要}{I}{section*.1}%
+\contentsline {nonumbersection}{Abstract}{II}{section*.2}%
 \contentsline {section}{\numberline {1}绪论}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}研究背景和意义}{1}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}噜噜}{2}{subsubsection.1.1.1}%
@@ -8,6 +8,6 @@
 \contentsline {section}{\numberline {2}重要技术}{2}{section.2}%
 \contentsline {section}{\numberline {3}全新的水豚养殖方法}{2}{section.3}%
 \contentsline {section}{\numberline {4}总结与展望}{2}{section.4}%
-\contentsline {nonumbersection}{\zihao {4}\CJKfamily {zhsong}{参考文献}}{4}{section.4}%
-\contentsline {nonumbersection}{\zihao {4}{\CJKfamily {zhsong}{致谢}}}{5}{Item.2}%
+\contentsline {nonumbersection}{参考文献}{4}{section*.5}%
+\contentsline {nonumbersection}{致谢}{5}{section*.6}%
 \contentsfinish 

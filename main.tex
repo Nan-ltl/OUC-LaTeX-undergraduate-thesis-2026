@@ -17,33 +17,9 @@
 \usepackage{pdfpages}
 \usepackage{enumitem}
 \setlist{nosep} 
-\usepackage[%
-colorlinks=false,        % 启用颜色链接（自动去掉边框）
-linkcolor=black,        % 内部链接（目录、交叉引用）为黑色
-citecolor=black,        % 参考文献引用为黑色
-urlcolor=black,         % URL链接为黑色
-filecolor=black,        % 文件链接为黑色
-pdfborder={0 0 0}       % 额外确保边框为0
-]{hyperref}
 \frenchspacing
 \setmainfont{Times New Roman}
-\usepackage[
-backend=biber,
-style=gb7714-2015,
-gbnamefmt=lowercase 
-]{biblatex}
-% 参考文献格式
-\AtBeginBibliography{
-	\zihao{-4}
-	\songti
-	\fixbaselineskip
-}
-\renewbibmacro{in:}{\setunit{\addperiod\space}}
-\renewbibmacro{publisher+location+date}{%
-	\setunit{\addcomma\space}%
-	\printfield{year}%
-}
-\addbibresource{ref.bib}
+
 \title{关于赛博水豚的养殖研究}
 \entitle{Research on the Breeding of Cyber Capybaras}
 
@@ -95,40 +71,17 @@ gbnamefmt=lowercase
 	
 	% 参考文献
 	
-
-	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{参考文献}}
+    \phantomsection
+	\addcontentsline{toc}{nonumbersection}{参考文献}
 	{\centering
 	\zihao{-3}\fixbaselineskip\heiti 参考文献\par}
-	\defbibenvironment{bibliography}
-	{\list
-		{\printtext[labelnumberwidth]{%
-				\printfield{labelprefix}%
-				\printfield{labelnumber}}}
-		{%
-			\setlength{\labelwidth}{\labelnumberwidth}%
-			\setlength{\labelsep}{\biblabelsep}%
-			\setlength{\leftmargin}{\labelwidth}%
-			\addtolength{\leftmargin}{\labelsep}%
-			\setlength{\itemsep}{\bibitemsep}%
-			\setlength{\parsep}{\bibparsep}%
-			% 清零列表自身的顶部/段落额外间距
-			\setlength{\topsep}{0pt}%
-			\setlength{\partopsep}{0pt}%
-			\setlength{\itemsep}{0pt}%
-			\setlength{\parsep}{0pt}%
-			\setlength{\itemindent}{0pt}%
-			\setlength{\listparindent}{0pt}%
-			\setlength{\rightmargin}{0pt}%
-			\usecounter{instcount}%
-		}%
-	}
-	{\endlist}
-	{\item}
+
 	\printbibliography[heading=none]
 	\newpage
 	
 	% 致谢
-	\addcontentsline{toc}{nonumbersection}{\zihao{4}{\songti{致谢}}}
+	\phantomsection
+	\addcontentsline{toc}{nonumbersection}{致谢}
 	{\centering
 		\zihao{-3}{\heiti{致谢}}\par
 	}

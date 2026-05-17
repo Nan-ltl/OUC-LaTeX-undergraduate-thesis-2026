@@ -6,7 +6,7 @@
 \RequirePackage{abstract}
 \RequirePackage{fontspec}
 \RequirePackage{ctex}
-
+\RequirePackage{bookmark}
 
 \long\def\cnabstractkeywords#1#2{
 	\def\@cnabstract{#1}
@@ -27,7 +27,8 @@
 \newcommand*{\makeabstract}{
 	\newpage
 	\pagenumbering{Roman}
-	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{摘要}}
+	\phantomsection
+	\addcontentsline{toc}{nonumbersection}{摘要}
 	{\centering
 		\zihao{3}\fixbaselineskip\heiti{\@title} \par
 		\heiti{摘\ \ \ 要}\par}
@@ -38,7 +39,9 @@
 	{\zihao{-4}\fixbaselineskip\heiti 关键词：\textbf{\@cnkeywords} }
 	\newpage
 	\fi
-	\addcontentsline{toc}{nonumbersection}{\zihao{4}\songti{Abstract}}
+	
+	\phantomsection
+	\addcontentsline{toc}{nonumbersection}{Abstract}
 	\ifdefined\@enabstract
 	{\centering
 		\zihao{3}\fixbaselineskip\enheiti{\@entitle\par
@@ -50,4 +53,5 @@
 	
 	\fi
 	\newpage
+	\bookmarksetup{startatroot}
 }
